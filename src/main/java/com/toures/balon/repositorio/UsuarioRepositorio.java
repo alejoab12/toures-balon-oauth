@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.toures.balon.rest.modelos.AutenticacionModelo;
 
-@FeignClient(name="toures-balon-usuario")
+@FeignClient(name="toures-balon-usuario-service")
 public interface UsuarioRepositorio {
 	@PostMapping("/autenticacion")
 	public AutenticacionModelo buscarPorUsuarioOCorreo(
